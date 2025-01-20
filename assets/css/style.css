@@ -1,0 +1,105 @@
+/* Defaul CSS */
+:root {
+    --clrPrimary: #FEA301;
+    --clrBlack: #111111;
+    --clrBlue: #01ACFD;
+    --clrWhite: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+    font-style: normal;
+}
+
+body {
+    font-size: 15px;
+    font-weight: 400;
+    background: #F7F7F7;
+    color: #808080;
+    line-height: 28px;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s all ease-in-out;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.clr-primary {
+    color: var(--clrPrimary);
+}
+
+.clr-black {
+    color: var(--clrBlack);
+}
+
+.clr-blue {
+    color: var(--clrBlue);
+}
+
+.clr-white {
+    color: var(--clrWhite);
+}
+.bg-white {
+    background: var(--clrWhite);
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
+.gird {
+    display: grid;
+}
+.btn {
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 197px;
+    height: 50px;
+}
+.btn:hover {
+    background: var(--clrPrimary) !important;
+    color: #fff;
+}
+
+.section-title {
+    font-size: 46px;
+    line-height: 57.5px;
+    margin-bottom: 80px;
+}
+/* End default CSS */
+
+/* Header */
+
+/* Mobile responsive CSS */
+@media (max-width: 767px) {
+
+}
