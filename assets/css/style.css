@@ -50,6 +50,14 @@ h1, h2, h3, h4, h5, h6 {
 .clr-white {
     color: var(--clrWhite);
 }
+
+.fw-bold {
+    font-weight: 700;
+}
+.fw-medium {
+    font-weight: 500;
+} 
+
 .bg-white {
     background: var(--clrWhite);
 }
@@ -70,24 +78,20 @@ h1, h2, h3, h4, h5, h6 {
 .align-center {
     align-items: center;
 }
-.gird {
+.grid {
     display: grid;
 }
 .btn {
     padding: 10px;
     border-radius: 12px;
     font-size: 20px;
-    font-weight: 700;
     line-height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 197px;
     height: 50px;
+    color: var(--clrWhite)
 }
 .btn:hover {
     background: var(--clrPrimary) !important;
-    color: #fff;
 }
 
 .section-title {
@@ -98,6 +102,75 @@ h1, h2, h3, h4, h5, h6 {
 /* End default CSS */
 
 /* Header */
+.site-brand span {
+    font-size: 32px;
+    line-height: 30px;
+}
+
+.site-brand {
+    gap: 10px;
+}
+
+nav.navigation ul {
+    list-style: none;
+    gap: 32px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+nav.navigation li:nth-child(3) a {
+    color: #05D4DF;
+}
+
+nav.navigation li:nth-child(4) a {
+    color: #5D58EF;
+}
+.mobile-nav {
+    display: none;
+}
+
+.header-btn {
+    background: var(--clrPrimary);
+}
+
+.header-btn:hover {
+    background: var(--clrBlack) !important;
+}
+
+/* Footer CSS */
+.footer {
+    background: var(--clrBlue);
+    padding: 124px 0;
+}
+
+.footer-content {
+    grid-template-columns: 1fr 1fr;
+}
+.footer-left {
+    grid-gap: 35px;
+}
+
+.footer-left p {
+    max-width: 400px;
+    font-size: 20px;
+}
+
+.widget-nav h4 {
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.footer-navs {
+    gap: 10px;
+}
+
+.footer-navs a {
+    font-size: 20px;
+}
+
+.footer-social {
+    gap: 10px;
+}
 
 /* Mobile responsive CSS */
 @media (max-width: 767px) {
