@@ -15,7 +15,7 @@
             <div class="header-content flex justify-between align-center">
                 <a href="./index.html" class="site-brand fw-bold clr-black flex align-center">
                     <img src="./assets/imgs/logo.png" alt="Logo">
-                    <span>SCHOOL</span>
+                    <span class="logo-text">SCHOOL</span>
                 </a>
                 <nav class="navigation">
                     <div class="mobile-nav">
@@ -35,7 +35,7 @@
         </div>
     </header>
     <main class="main">
-        <div class="container flex align-center justify-between">
+        <div class="container hero-wrap flex align-center justify-between">
             <div class="hero-content grid">
                 <h1 class="clr-black">
                     <span class="clr-primary">Empowering</span> students from small age <span class="clr-blue">towards vision</span>
@@ -145,7 +145,7 @@
                     </div>
                 </div>
                 <div class="story-btn flex align-center justify-center">
-                    <a href="#" class="btn flex justify-center algin-center fw-bold">View All</a>
+                    <a href="#" class="btn flex justify-center align-center fw-bold">View All</a>
                 </div>
             </div>
         </section>
@@ -192,5 +192,15 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const menuActive = document.querySelector('.mobile-nav');
+        const menu = document.querySelector('.navigation');
+
+        menuActive.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+
+    </script>
 </body>
 </html>

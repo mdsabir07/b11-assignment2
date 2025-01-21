@@ -415,5 +415,187 @@ nav.navigation li:nth-child(4) a {
 
 /* Mobile responsive CSS */
 @media (max-width: 767px) {
+    .container {
+        padding: 0 20px;
+    }
+    .header-btn,
+    nav.navigation ul,
+    .story-left,
+    .site-brand span,
+    .curriculum-angle {
+        display: none;
+    }
+    .header {
+        padding: 12px 0;
+    }
+    .mobile-nav span {
+        background: var(--clrBlack);
+        height: 2px;
+    }
+    
+    /* Mobile nav CSS */
+    .mobile-nav {
+        display: flex;
+        gap: 5px;
+        cursor: pointer;
+        width: 25px;
+    }
 
+    
+    nav.navigation {
+        position: relative;
+    }
+    nav.navigation ul {
+        position: absolute;
+        left: auto;
+        right: -20px;
+        min-width: 0vw;
+        min-height: 0;
+        background: var(--clrBlack);
+        padding: 20px;
+        transition: all 3s ease-in-out;
+    }
+
+    nav.navigation.show ul {
+        display: block;
+        min-height: 100%;
+        min-width: 100vw;
+        max-width: 100%;
+    }
+    
+    
+    
+    .hero-wrap {
+        flex-direction: column-reverse;
+        gap: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        gap: 18px;
+    }
+    .hero-content h1 {
+        width: 100%;
+    }
+    
+    .hero-content h1 {
+        font-size: 32px;
+        line-height: normal;
+    }
+    
+    .hero-content p {
+        font-size: 14px;
+    }
+    
+    .btn {
+        font-size: 16px;
+        width: 141px;
+        height: 42px;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        font-size: 26px;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+    .single-card {
+        padding: 36px 28px;
+        grid-gap: 15px;
+    }
+
+    .single-card h3 {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .single-card p,
+    .single-card .readmore-btn {
+        font-size: 10px;
+        line-height: 19px;
+    }
+
+    .single-card img {
+        width: 93px;
+        height: 93px;
+    }
+
+    .curriculum-cards {
+        gap: 13px;
+    }
+
+    .stories {
+        margin-top: 50px;
+    }
+
+    .story-right {
+        grid-gap: 11px;
+    }
+
+    .story-right .story-box h3,
+    .story-box time {
+        font-size: 9px;
+        line-height: 17px;
+    }
+
+    .story-box time {
+        top: -25px;
+        left: 23px;
+        padding: 5px 10px !important;
+    }
+
+    .story-right .story-inner-content {
+        padding: 0 23px 17px;
+    }
+
+    .story-inner-content {
+        margin-top: -15px;
+    }
+    
+    .curriculum-cards,
+    .footer-right,
+    .mobile-nav  {
+        flex-direction: column;
+    }
+    
+    .story-content {
+        gap: 0;
+    }
+    
+    .story-right .story-box:nth-child(5), 
+    .story-right .story-box:nth-child(6) {
+        display: block;
+    }
+    
+    .story-btn {
+        padding: 30px 0 50px;
+    }
+    
+    .footer-content,
+    .story-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-right,
+    .footer-content {
+        gap: 30px;
+    }
+    .footer {
+        padding: 60px 0 40px;
+    }
+    .footer-left p {
+        font-size: 16px;
+    }
+    .widget-nav h4 {
+        font-size: 20px;
+        margin-bottom: 22px;
+    }
+    .footer-navs a {
+        font-size: 17px;
+    }
+    .footer-left {
+        grid-gap: 15px;
+    }
 }
