@@ -151,6 +151,7 @@ nav.navigation li:nth-child(4) a {
 
 .hero-content p {
     font-size: 20px;
+    font-weight: 500;
 }
 
 .hero-content .btn {
@@ -416,7 +417,7 @@ nav.navigation li:nth-child(4) a {
 /* Mobile responsive CSS */
 @media (max-width: 767px) {
     .container {
-        padding: 0 20px;
+        padding: 0 15px;
     }
     .header-btn,
     nav.navigation ul,
@@ -427,10 +428,11 @@ nav.navigation li:nth-child(4) a {
     }
     .header {
         padding: 12px 0;
+        border-bottom: 0.5px solid #FED180;
+        margin-bottom: 25px;
     }
-    .mobile-nav span {
-        background: var(--clrBlack);
-        height: 2px;
+    .site-brand img {
+        width: 46px;
     }
     
     /* Mobile nav CSS */
@@ -440,31 +442,31 @@ nav.navigation li:nth-child(4) a {
         cursor: pointer;
         width: 25px;
     }
-
-    
+    .mobile-nav span {
+        background: var(--clrBlack);
+        height: 2px;
+    }
     nav.navigation {
         position: relative;
     }
     nav.navigation ul {
         position: absolute;
+        top: 44px;
         left: auto;
-        right: -20px;
+        right: -15px;
         min-width: 0vw;
         min-height: 0;
         background: var(--clrBlack);
         padding: 20px;
-        transition: all 3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
-
     nav.navigation.show ul {
         display: block;
         min-height: 100%;
         min-width: 100vw;
         max-width: 100%;
     }
-    
-    
-    
+    /* end mobile nav CSS */
     .hero-wrap {
         flex-direction: column-reverse;
         gap: 20px;
@@ -597,5 +599,8 @@ nav.navigation li:nth-child(4) a {
     }
     .footer-left {
         grid-gap: 15px;
+    }
+    .footer-social a img {
+        width: 34px;
     }
 }
