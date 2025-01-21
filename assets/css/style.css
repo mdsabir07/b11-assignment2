@@ -98,10 +98,15 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 46px;
     line-height: 57.5px;
     margin-bottom: 80px;
+    color: var(--clrBlack);
+    text-align: center;
 }
 /* End default CSS */
 
 /* Header */
+.header {
+    padding: 20px 0;
+}
 .site-brand span {
     font-size: 32px;
     line-height: 30px;
@@ -137,6 +142,238 @@ nav.navigation li:nth-child(4) a {
     background: var(--clrBlack) !important;
 }
 
+/* Hero CSS */
+.hero-content h1 {
+    font-size: 56px;
+    line-height: 61px;
+    width: 580px;
+}
+
+.hero-content p {
+    font-size: 20px;
+}
+
+.hero-content .btn {
+    background: var(--clrBlack);
+}
+
+.hero-content {
+    grid-gap: 24px;
+    max-width: 640px;
+}
+
+/* Curriculum CSS */
+
+.curriculum {
+    background: url('../imgs/bg.png');
+    background-size: cover;
+    background-position: center top;
+}
+.curriculum .section-title {
+    padding-top: 50px;
+}
+
+.single-card {
+    justify-items: center;
+    text-align: center;
+    padding: 40px;
+    grid-gap: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    border-radius: 19px;
+}
+
+.curriculum-cards {
+    gap: 28px;
+}
+
+.single-card:nth-child(1) {
+    background: linear-gradient(180deg, var(--clrBlue) -100%, var(--clrWhite) 24%);
+}
+
+.single-card:nth-child(2) {
+    background: linear-gradient(180deg, var(--clrPrimary) -100%, var(--clrWhite) 24%);
+}
+
+.single-card:nth-child(3) {
+    background: linear-gradient(180deg, #8700FF -100%, var(--clrWhite) 24%);
+}
+
+.single-card h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.single-card p {
+    font-weight: 500;
+}
+
+.single-card .readmore-btn {
+    margin-top: auto;
+    text-transform: capitalize;
+}
+
+.single-card .readmore-btn:hover {
+    color: var(--clrBlack);
+}
+
+.single-card img {
+    width: 138px;
+    height: 138px;
+    object-fit: contain;
+}
+
+.curriculum-angle {
+    padding: 75px 0;
+    gap: 10px;
+}
+
+.curriculum-angle span {
+    height: 60px;
+    width: 60px;
+    background: var(--clrPrimary);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.curriculum-angle span:hover {
+    background: var(--clrBlack);
+}
+
+.curriculum-angle span::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border-top: 3px solid var(--clrWhite);
+    border-left: 3px solid var(--clrWhite);
+    top: 20px;
+}
+.curriculum-angle span.angle1::before {
+    transform: rotate(-45deg);
+    left: 24px;
+}
+.curriculum-angle span.angle2::before {
+    transform: rotate(130deg);
+    right: 24px;
+}
+
+.curriculum-angle span.angle1::before {
+    transform: rotate(-45deg);
+}
+
+
+/* Story CSS */
+.stories {
+    background: url('../imgs/bg.png');
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+}
+.stories::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(0deg, var(--clrPrimary) -140%, transparent 90%);
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.story-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.story-box {
+    border-radius: 16px;
+    background: var(--clrWhite);
+}
+
+.story-box img {
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+}
+
+.story-box time {
+    padding: 12px 18px;
+    color: var(--clrWhite);
+    font-weight: 500;
+    border-radius: 48px;
+    position: relative;
+    top: -20px;
+    left: 38px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.story-left .story-box time {
+    background: var(--clrBlue);
+}
+
+.story-right .story-box time {
+    padding: 8px 12px;
+}
+
+.story-right .story-box time {
+    background: var(--clrPrimary);
+}
+
+.story-right .story-box:nth-child(1) time {
+    background: #95B226;
+}
+
+.story-right .story-box:nth-child(2) time {
+    background: #5D58F0;
+}
+.story-right .story-box:nth-child(3) time {
+    background: var(--clrPrimary);
+}
+.story-right .story-box:nth-child(4) time {
+    background: var(--clrBlack);
+}
+
+.story-box time:hover {
+    background: var(--clrPrimary) !important;
+}
+
+.story-inner-content {
+    padding: 24px 35px;
+}
+
+.story-left .story-inner-content h3 {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.story-right {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 18px;
+}
+
+.story-right .story-box:nth-child(5), .story-right .story-box:nth-child(6) {
+    display: none;
+}
+
+.story-right .story-box h3 {
+    font-size: 15px;
+}
+
+.story-right .story-inner-content {
+    padding: 0 35px 24px;
+}
+
+.story-btn .btn {
+    background: var(--clrBlack);
+}
+
+.story-btn {
+    padding: 80px 0 60px;
+}
+
+
 /* Footer CSS */
 .footer {
     background: var(--clrBlue);
@@ -166,6 +403,10 @@ nav.navigation li:nth-child(4) a {
 
 .footer-navs a {
     font-size: 20px;
+}
+
+.footer-navs a:hover {
+    color: var(--clrPrimary);
 }
 
 .footer-social {
