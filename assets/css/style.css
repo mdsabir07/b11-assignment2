@@ -170,10 +170,14 @@ nav.navigation li:nth-child(4) a {
     white-space: nowrap;
     padding: 30px 0;
 }
+
 .marquee p {
     display: inline-block;
     font-size: 28px;
-    animation: marquee-animation 10s linear infinite;
+    animation: marquee-animation 15s linear infinite;
+}
+.marquee:hover p {
+    animation-play-state: paused;
 }
 @keyframes marquee-animation {
     0% {
